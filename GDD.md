@@ -39,7 +39,6 @@ View: Top down
 
 Device: PC 
 --
-
 GAME ATMOSPHERE 
 
 Atmosphere Mood: ตื่นเต้นตลอดเวลา 
