@@ -1,65 +1,64 @@
--Game Design document 
+Game Design document 
 --
--Introduction 
+Introduction 
 --
--High concept : คุณจะได้รับบทเป็นโจรที่รับจ้างขโมยของจากผู้ว่าจ้างเพื่อไปขโมยของที่ผู้ว่าจ้างต้องการให้สำเร็จ
+High concept : คุณจะได้รับบทเป็นโจรที่รับจ้างขโมยของจากผู้ว่าจ้างเพื่อไปขโมยของที่ผู้ว่าจ้างต้องการให้สำเร็จ
 
--Game Objective : ขโมยของที่กำหนดให้ครบ
+Game Objective : ขโมยของที่กำหนดให้ครบ
 
--Key Features ธีม: ยุคปัจจุบัน แนวเกม: Top down Puzzle ระบบการเล่น: แก้ไขปริศนา, เก็บของ
+Key Features ธีม: ยุคปัจจุบัน แนวเกม: Top down Puzzle ระบบการเล่น: แก้ไขปริศนา, เก็บของ
 
- --
 
--Game Description  
+
+Game Description  
 --
--Genre: Top down Puzzle
+Genre: Top down Puzzle
 
--Game Mechanic: Puzzle, Collect item
+Game Mechanic: Puzzle, Collect item
 
--Theme: Modern times
+Theme: Modern times
 
--Style: Anime 
+Style: Anime 
 
--Game Sequence: Linear-Storyline 
+Game Sequence: Linear-Storyline 
 
--Player: ผู้เล่นจำนวน 1 คน, ผู้เล่นจะได้รับบทโจรรับจ้าง
+Player: ผู้เล่นจำนวน 1 คน, ผู้เล่นจะได้รับบทโจรรับจ้าง
 
--Fun Factors: การแก้ปริศนาและเก็บของให้ครบ
+Fun Factors: การแก้ปริศนาและเก็บของให้ครบ
 
--Challenge: รูปแบบของปริศนาที่มีให้แก้อยู่ 3 แบบ, หาของที่ซ้อนอยู่ภายในฉาก
+Challenge: รูปแบบของปริศนาที่มีให้แก้อยู่ 3 แบบ, หาของที่ซ้อนอยู่ภายในฉาก
 
+
+Game Technical   
 --
--Game Technical   
+Game Engine: Unity 2022.3.14f1
+
+Graphics Dimensions: 2D,3D
+
+View: Top down
+
+Device: PC 
+
+GAME ATMOSPHERE 
 --
--Game Engine: Unity 2022.3.14f1
+Atmosphere Mood: ตื่นเต้นตลอดเวลา 
 
--Graphics Dimensions: 2D,3D
+Character: ตัวละครเอก มีชื่อว่า “Louis (ลูอิส)” เป็นโจรรับจ้างมือพระกาฬที่ต้องไปขโมยของเพื่อเอามาให้นายจ้างเพื่อแลกกับส่วนแบ่ง
 
--View: Top down
-
--Device: PC 
---
-
--GAME ATMOSPHERE 
-
--Atmosphere Mood: ตื่นเต้นตลอดเวลา 
-
--Character: ตัวละครเอก มีชื่อว่า “Louis (ลูอิส)” เป็นโจรรับจ้างมือพระกาฬที่ต้องไปขโมยของเพื่อเอามาให้นายจ้างเพื่อแลกกับส่วนแบ่ง
-
--A Level: สภาพแวดล้อมภายในเกมจะเป็นโกดังเก็บของในตอนกลางคืน
+A Level: สภาพแวดล้อมภายในเกมจะเป็นโกดังเก็บของในตอนกลางคืน
     
+
+GAMEPLAY ANALYSIS 
 --
--GAME PLAY ANALYSIS 
+Game Mechanic   
 
--Game Mechanic   
+1.Core Mechanic   แก้ปริศนา, เก็บของ
 
--1.Core Mechanic   แก้ปริศนา, เก็บของ
+2.Secondary Mechanics  เดินหาของ
 
--2.Secondary Mechanics  เดินหาของ
+3.Progression  ของคำใบ้เพื่อแก้ปริศนา
 
--3.Progression  ของคำใบ้เพื่อแก้ปริศนา
-
--4.Narrative นำของที่ขโมยไปส่งให้นายจ้างเพื่อจบเกม
+4.Narrative นำของที่ขโมยไปส่งให้นายจ้างเพื่อจบเกม
 
  
 
