@@ -1,16 +1,16 @@
--Game Design document 
+Game Design document 
 --
 -Introduction 
 --
--High concept : คุณจะได้รับบทเป็นโจรที่รับจ้างขโมยของจากผู้ว่าจ้างเพื่อไปขโมยของที่ผู้ว่าจ้างต้องการให้สำเร็จ
+High concept : คุณจะได้รับบทเป็นโจรที่รับจ้างขโมยของจากผู้ว่าจ้างเพื่อไปขโมยของที่ผู้ว่าจ้างต้องการให้สำเร็จ
 
--Game Objective : ขโมยของที่กำหนดให้ครบ
+Game Objective : ขโมยของที่กำหนดให้ครบ
 
--Key Features ธีม: ยุคปัจจุบัน แนวเกม: Top down Puzzle ระบบการเล่น: แก้ไขปริศนา, เก็บของ
+Key Features ธีม: ยุคปัจจุบัน แนวเกม: Top down Puzzle ระบบการเล่น: แก้ไขปริศนา, เก็บของ
 
  --
 
--Game Description  
+Game Description  
 --
 -Genre: Top down Puzzle
 
@@ -29,7 +29,7 @@
 -Challenge: รูปแบบของปริศนาที่มีให้แก้อยู่ 3 แบบ, หาของที่ซ้อนอยู่ภายในฉาก
 
 --
--Game Technical   
+Game Technical   
 --
 -Game Engine: Unity 2022.3.14f1
 
@@ -49,7 +49,7 @@
 -A Level: สภาพแวดล้อมภายในเกมจะเป็นโกดังเก็บของในตอนกลางคืน
     
 --
--GAME PLAY ANALYSIS 
+GAME PLAY ANALYSIS 
 
 -Game Mechanic   
 
