@@ -8,7 +8,7 @@ Game Objective : ขโมยของที่กำหนดให้ครบ
 
 Key Features ธีม: ยุคปัจจุบัน แนวเกม: Top down Puzzle ระบบการเล่น: แก้ไขปริศนา, เก็บของ
 
---
+
 
 Game Description  
 --
