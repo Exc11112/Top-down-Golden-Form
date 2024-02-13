@@ -8,7 +8,7 @@ Game Objective : ขโมยของที่กำหนดให้ครบ
 
 Key Features ธีม: ยุคปัจจุบัน แนวเกม: Top down Puzzle ระบบการเล่น: แก้ไขปริศนา, เก็บของ
 
- --
+--
 
 Game Description  
 --
@@ -49,6 +49,7 @@ Character: ตัวละครเอก มีชื่อว่า “Louis (
 A Level: สภาพแวดล้อมภายในเกมจะเป็นโกดังเก็บของในตอนกลางคืน
     
 --
+
 GAME PLAY ANALYSIS 
 
 Game Mechanic   
