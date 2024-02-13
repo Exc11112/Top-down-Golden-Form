@@ -1,6 +1,6 @@
 Game Design document 
 --
--Introduction 
+Introduction 
 --
 High concept : คุณจะได้รับบทเป็นโจรที่รับจ้างขโมยของจากผู้ว่าจ้างเพื่อไปขโมยของที่ผู้ว่าจ้างต้องการให้สำเร็จ
 
