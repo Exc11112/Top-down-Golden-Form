@@ -4,18 +4,21 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerContoller : MonoBehaviour
 {
     public Animator anim;
     public float speed;
     public Vector2 move;
+    private Vector3 initialPosition;
+
 
     private bool awalk;
 
     void Start()
     {
-        // Initialization code here if needed
+        initialPosition = transform.position;
     }
 
     void Update()
@@ -31,6 +34,9 @@ public class PlayerContoller : MonoBehaviour
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
         }
+
+        //Vector3 smoothedMovement = Vector3.Lerp(transform.position, transform.position + movement, 0.1f);
+        //transform.position = smoothedMovement;
 
         transform.Translate(movement * speed * Time.deltaTime, Space.World);
     }
@@ -55,5 +61,20 @@ public class PlayerContoller : MonoBehaviour
             speed /= 1.5f; // Reset speed when Shift key is released
             anim.SetBool("runis", false);
         }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        // Check if the collided object has a specific tag
+        if (collision.gameObject.CompareTag("Laser"))
+        {
+            ResetStage();
+        }
+    }
+
+    public void ResetStage()
+    {
+        transform.position = initialPosition;
+        SceneManager.LoadScene("1");
     }
 }

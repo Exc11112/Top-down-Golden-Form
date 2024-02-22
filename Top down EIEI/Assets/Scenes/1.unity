@@ -658,6 +658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 137650660}
   - component: {fileID: 137650659}
+  - component: {fileID: 137650661}
   m_Layer: 0
   m_Name: Laser (2)
   m_TagString: Untagged
@@ -732,6 +733,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+--- !u!65 &137650661
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137650658}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16.411062, y: 2.383765, z: 11.592878}
+  m_Center: {x: 0.31339383, y: 1.1435289, z: 5.5472374}
 --- !u!1 &151456339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,6 +1163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 191803516}
   - component: {fileID: 191803515}
+  - component: {fileID: 191803517}
   m_Layer: 0
   m_Name: Laser (5)
   m_TagString: Untagged
@@ -1215,6 +1238,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+--- !u!65 &191803517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191803514}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16.507801, y: 2.3878145, z: 11.510764}
+  m_Center: {x: 0.17973429, y: 1.1712234, z: 5.655381}
 --- !u!1 &203745772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,6 +1795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 295547023}
   - component: {fileID: 295547022}
+  - component: {fileID: 295547024}
   m_Layer: 0
   m_Name: Laser (6)
   m_TagString: Untagged
@@ -1825,6 +1870,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+--- !u!65 &295547024
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295547021}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16.34771, y: 2.2557752, z: 3.9984393}
+  m_Center: {x: 0.20722124, y: 1.127058, z: 1.8992201}
 --- !u!1 &313455106
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,9 +2377,10 @@ GameObject:
   m_Component:
   - component: {fileID: 429096628}
   - component: {fileID: 429096627}
+  - component: {fileID: 429096629}
   m_Layer: 0
   m_Name: Laser
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2385,6 +2452,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+--- !u!65 &429096629
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429096626}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16.212383, y: 2.2179005, z: 14.77834}
+  m_Center: {x: 0.267865, y: 1.1957812, z: 7.289162}
 --- !u!1 &466330138
 GameObject:
   m_ObjectHideFlags: 0
@@ -6448,6 +6536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1585344274}
   - component: {fileID: 1585344273}
+  - component: {fileID: 1585344275}
   m_Layer: 0
   m_Name: Laser (4)
   m_TagString: Untagged
@@ -6522,6 +6611,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+--- !u!65 &1585344275
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585344272}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16.38226, y: 2.376541, z: 10.918882}
+  m_Center: {x: 0.14126596, y: 1.1657202, z: 5.3594403}
 --- !u!1 &1603330889
 GameObject:
   m_ObjectHideFlags: 0
@@ -6836,6 +6946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1800425548}
   - component: {fileID: 1800425547}
+  - component: {fileID: 1800425549}
   m_Layer: 0
   m_Name: Laser (1)
   m_TagString: Untagged
@@ -6910,6 +7021,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+--- !u!65 &1800425549
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800425546}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16.074823, y: 2.2132878, z: 10.470997}
+  m_Center: {x: 0.106879346, y: 1.2512814, z: 5.1354976}
 --- !u!1 &1827394926
 GameObject:
   m_ObjectHideFlags: 0
@@ -7341,6 +7473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1959898671}
   - component: {fileID: 1959898670}
+  - component: {fileID: 1959898672}
   m_Layer: 0
   m_Name: Laser (3)
   m_TagString: Untagged
@@ -7415,6 +7548,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+--- !u!65 &1959898672
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959898669}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16.508202, y: 2.4763248, z: 9.325434}
+  m_Center: {x: 0.116591126, y: 1.1869121, z: 4.5627174}
 --- !u!1 &1982332414
 GameObject:
   m_ObjectHideFlags: 0
@@ -7912,6 +8066,7 @@ GameObject:
   - component: {fileID: 2050911718}
   - component: {fileID: 2050911720}
   - component: {fileID: 2050911719}
+  - component: {fileID: 2050911721}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -7928,7 +8083,7 @@ Transform:
   m_GameObject: {fileID: 2050911711}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.8, y: 1, z: -14.9}
+  m_LocalPosition: {x: -11.15, y: 1.5, z: -14.9}
   m_LocalScale: {x: 1.4313, y: 1.4313, z: 1.4313}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8086,6 +8241,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050911711}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &2050911721
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050911711}
+  serializedVersion: 4
+  m_Mass: 0.1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &2074447266
 GameObject:
   m_ObjectHideFlags: 0
