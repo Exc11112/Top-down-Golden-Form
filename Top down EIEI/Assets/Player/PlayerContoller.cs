@@ -47,12 +47,12 @@ public class PlayerContoller : MonoBehaviour
     {
         if (context.performed)
         {
-            speed *= 2f; // Adjust the running speed as needed
+            speed *= 1.5f; // Adjust the running speed as needed
             anim.SetBool("runis", true);
         }
         else if (context.canceled)
         {
-            speed /= 2f; // Reset speed when Shift key is released
+            speed /= 1.5f; // Reset speed when Shift key is released
             anim.SetBool("runis", false);
         }
     }
