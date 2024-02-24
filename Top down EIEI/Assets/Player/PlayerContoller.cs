@@ -16,7 +16,8 @@ public class PlayerContoller : MonoBehaviour
     public Vector2 move;
     private Vector3 initialPosition;
     private bool isRunning = false;
-    //public Image Box, Money, Jewelry, Skull, Gold;
+    public Image Box;
+    public int box;
 
     private bool awalk;
 
@@ -30,6 +31,10 @@ public class PlayerContoller : MonoBehaviour
     void Update()
     {
         movePlayer();
+        if(Input.GetKeyDown(KeyCode.X)) 
+        {
+            Debug.Log(box);
+        }
     }
 
     public void movePlayer()
@@ -52,42 +57,6 @@ public class PlayerContoller : MonoBehaviour
         checkRunInput();
     }
 
-    //public void movePlayer()
-    //{
-    //    Vector3 movement = new Vector3(move.x, 0f, move.y);
-
-    //    if (movement != Vector3.zero)
-    //    {
-    //        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
-    //    }
-
-    //    //Vector3 smoothedMovement = Vector3.Lerp(transform.position, transform.position + movement, 0.1f);
-    //    //transform.position = smoothedMovement;
-
-    //    transform.Translate(movement * speed * Time.deltaTime, Space.World);
-    //}
-
-    //public void OnMove(InputAction.CallbackContext context)
-    //{
-    //    move = context.ReadValue<Vector2>();
-    //    awalk = move.magnitude > 0;
-
-    //    anim.SetBool("walkis", awalk);
-    //}
-
-    //public void OnRun(InputAction.CallbackContext context)
-    //{
-    //    if (context.performed)
-    //    {
-    //        speed *= 1.5f; // Adjust the running speed as needed
-    //        anim.SetBool("runis", true);
-    //    }
-    //    else if (context.canceled)
-    //    {
-    //        speed /= 1.5f; // Reset speed when Shift key is released
-    //        anim.SetBool("runis", false);
-    //    }
-    //}
 
     public void checkRunInput()
     {
@@ -112,6 +81,18 @@ public class PlayerContoller : MonoBehaviour
         if (collision.gameObject.CompareTag("Laser"))
         {
             ResetStage();
+        }
+    }
+
+    private void OnTriggerStay(Collider collision)
+    {
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            if (Input.GetKey(KeyCode.E))
+            {
+                collision.gameObject.SetActive(false);
+                box = 1;
+            }
         }
     }
 
