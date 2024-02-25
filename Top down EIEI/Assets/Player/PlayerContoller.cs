@@ -155,4 +155,6 @@ public class PlayerContoller : MonoBehaviour
         transform.position = initialPosition;
         SceneManager.LoadScene("1");
     }
+
+
 }
