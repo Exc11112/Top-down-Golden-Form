@@ -11,6 +11,7 @@ TagManager:
   - Skull
   - Gold
   - EndDoor
+  - Button1
   layers:
   - Default
   - TransparentFX
