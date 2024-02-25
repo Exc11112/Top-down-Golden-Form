@@ -35,9 +35,17 @@ public class PlayerContoller : MonoBehaviour
     void Update()
     {
         movePlayer();
-        if(Input.GetKeyDown(KeyCode.X)) 
+        if (Input.GetKeyDown(KeyCode.X))
         {
             Debug.Log(box);
+            Debug.Log(money);
+            Debug.Log(jewelry);
+            Debug.Log(skull);
+            Debug.Log(gold);
+        }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            box = 1; money = 1; jewelry = 1; skull = 1; gold = 1;
         }
     }
 
@@ -85,6 +93,11 @@ public class PlayerContoller : MonoBehaviour
         if (collision.gameObject.CompareTag("Laser"))
         {
             ResetStage();
+        }
+
+        if (collision.gameObject.CompareTag("EndDoor") && box == 1 && money == 1 && jewelry == 1 && skull == 1 && gold == 1)
+        {
+            SceneManager.LoadScene("End");
         }
     }
 
@@ -142,5 +155,4 @@ public class PlayerContoller : MonoBehaviour
         transform.position = initialPosition;
         SceneManager.LoadScene("1");
     }
-
 }

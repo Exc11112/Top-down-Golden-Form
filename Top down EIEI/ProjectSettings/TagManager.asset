@@ -10,6 +10,7 @@ TagManager:
   - Jewelry
   - Skull
   - Gold
+  - EndDoor
   layers:
   - Default
   - TransparentFX
