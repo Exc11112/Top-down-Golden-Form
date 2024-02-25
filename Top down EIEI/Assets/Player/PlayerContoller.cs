@@ -16,15 +16,19 @@ public class PlayerContoller : MonoBehaviour
     public Vector2 move;
     private Vector3 initialPosition;
     private bool isRunning = false;
-    public Image Box;
-    public int box;
+    public Image Box, Money, Jewelry, Skull, Gold;
+    public int box, money, jewelry, skull, gold;
 
     private bool awalk;
 
     void Start()
     {
         initialPosition = transform.position;
-        //Box.gameObject.SetActive(false);
+        Box.gameObject.SetActive(false);
+        Money.gameObject.SetActive(false);
+        Jewelry.gameObject.SetActive(false);
+        Skull.gameObject.SetActive(false);
+        Gold.gameObject.SetActive(false);
         currentSpeed = walkSpeed;
     }
 
@@ -92,6 +96,43 @@ public class PlayerContoller : MonoBehaviour
             {
                 collision.gameObject.SetActive(false);
                 box = 1;
+                Box.gameObject.SetActive(true);
+            }
+        }
+        if (collision.gameObject.CompareTag("Money"))     
+        {
+            if (Input.GetKey(KeyCode.E))
+            {
+                collision.gameObject.SetActive(false);
+                money = 1;
+                Money.gameObject.SetActive(true);
+            }
+        }
+        if (collision.gameObject.CompareTag("Jewelry"))
+        {
+            if (Input.GetKey(KeyCode.E))
+            {
+                collision.gameObject.SetActive(false);
+                jewelry = 1;
+                Jewelry.gameObject.SetActive(true);
+            }
+        }
+        if (collision.gameObject.CompareTag("Skull"))
+        {
+            if (Input.GetKey(KeyCode.E))
+            {
+                collision.gameObject.SetActive(false);
+                skull = 1;
+                Skull.gameObject.SetActive(true);
+            }
+        }
+        if (collision.gameObject.CompareTag("Gold"))
+        {
+            if (Input.GetKey(KeyCode.E))
+            {
+                collision.gameObject.SetActive(false);
+                gold = 1;
+                Gold.gameObject.SetActive(true);
             }
         }
     }

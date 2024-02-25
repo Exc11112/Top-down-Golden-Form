@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Laser
   - Box
+  - Money
+  - Jewelry
+  - Skull
+  - Gold
   layers:
   - Default
   - TransparentFX
