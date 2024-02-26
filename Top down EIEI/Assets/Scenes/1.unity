@@ -11408,6 +11408,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2516792922914465146, guid: f46676e5d58e3a4439c4f95cd92b3124, type: 3}
+      propertyPath: m_Size.x
+      value: 0.037278082
+      objectReference: {fileID: 0}
+    - target: {fileID: 2516792922914465146, guid: f46676e5d58e3a4439c4f95cd92b3124, type: 3}
+      propertyPath: m_Center.x
+      value: 0.0008176215
+      objectReference: {fileID: 0}
     - target: {fileID: 3041812665555611298, guid: f46676e5d58e3a4439c4f95cd92b3124, type: 3}
       propertyPath: m_Name
       value: Ford Mustang 1968 Fastback Unity
