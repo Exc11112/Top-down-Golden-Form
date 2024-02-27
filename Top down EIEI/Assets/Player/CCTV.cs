@@ -9,23 +9,39 @@ public class CCTV : MonoBehaviour
     float rotSpeed;
     public float Speed;
     float WPradius = 1;
+    public int wait;
     // Start is called before the first frame update
     void Start()
     {
-        
+        wait = 1;
+        StartCoroutine(Timee());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(waypoints[current].transform.position, transform.position) < WPradius)
+        if (wait == 1)
         {
-            current++;
-            if (current >= waypoints.Length) 
+            if (Vector3.Distance(waypoints[current].transform.position, transform.position) < WPradius)
             {
-                current = 0;
+                current++;
+                if (current >= waypoints.Length)
+                {
+                    current = 0;
+                }
             }
+            transform.position = Vector3.MoveTowards(transform.position, waypoints[current].transform.position, Time.deltaTime * Speed);
         }
-        transform.position = Vector3.MoveTowards(transform.position, waypoints[current].transform.position, Time.deltaTime * Speed);
+    }
+
+    private IEnumerator Timee()
+    {
+        while (true)
+        {
+            wait = 0;
+            yield return new WaitForSeconds(3);
+            wait= 1;
+            yield return new WaitForSeconds(3);
+        }
     }
 }
