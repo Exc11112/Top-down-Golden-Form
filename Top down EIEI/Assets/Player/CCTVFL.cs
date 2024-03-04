@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CCTVFL : MonoBehaviour
 {
-    [SerializeField] float Downtime;
-    [SerializeField] float Uptime;
     public GameObject[] waypoints;
     int current = 0;
     float rotSpeed;
@@ -34,4 +32,5 @@ public class CCTVFL : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, waypoints[current].transform.position, Time.deltaTime * Speed);
         }
     }
+
 }

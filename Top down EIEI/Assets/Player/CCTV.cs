@@ -4,44 +4,32 @@ using UnityEngine;
 
 public class CCTV : MonoBehaviour
 {
+    
     public GameObject[] waypoints;
     int current = 0;
-    float rotSpeed;
+    [SerializeField] float Stoptime;
     public float Speed;
     float WPradius = 1;
-    private int wait;
-    // Start is called before the first frame update
-    void Start()
-    {
-        wait = 1;
-        StartCoroutine(Timee());
-    }
+    private bool isWaiting = false;
 
     // Update is called once per frame
     void Update()
     {
-        if (wait == 1)
+        if (!isWaiting)
         {
             if (Vector3.Distance(waypoints[current].transform.position, transform.position) < WPradius)
             {
-                current++;
-                if (current >= waypoints.Length)
-                {
-                    current = 0;
-                }
+                current = (current + 1) % waypoints.Length;
+                StartCoroutine(WaitAndMove());
             }
             transform.position = Vector3.MoveTowards(transform.position, waypoints[current].transform.position, Time.deltaTime * Speed);
         }
     }
 
-    private IEnumerator Timee()
+    private IEnumerator WaitAndMove()
     {
-        while (true)
-        {
-            wait = 0;
-            yield return new WaitForSeconds(3);
-            wait= 1;
-            yield return new WaitForSeconds(3);
-        }
+        isWaiting = true;
+        yield return new WaitForSecondsRealtime(Stoptime);
+        isWaiting = false;
     }
 }
