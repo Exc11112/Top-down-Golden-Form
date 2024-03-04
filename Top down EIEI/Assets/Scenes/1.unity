@@ -2270,7 +2270,6 @@ MonoBehaviour:
   - {fileID: 1016415351}
   - {fileID: 2092282178}
   Speed: 13.4
-  wait: 0
 --- !u!114 &238745015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2575,7 +2574,7 @@ Transform:
   m_GameObject: {fileID: 295547021}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -98.80119, y: -17.24, z: -23.0499}
+  m_LocalPosition: {x: -83.6, y: -17.24, z: -23.0499}
   m_LocalScale: {x: 1.5363536, y: 1.2461265, z: 1.0863597}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2611,14 +2610,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 295547021}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a09b0ca3bb24b240bfa4208eed7a3e8, type: 3}
+  m_Script: {fileID: 11500000, guid: ab39c31071d01624aab947d0e8a42abb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Downtime: 0
+  Uptime: 0
   waypoints:
   - {fileID: 909620741}
   - {fileID: 795435548}
   Speed: 15
-  wait: 0
 --- !u!1 &313455106
 GameObject:
   m_ObjectHideFlags: 0
@@ -5023,7 +5023,7 @@ Transform:
   m_GameObject: {fileID: 795435548}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -85.93, y: -15.541688, z: -23.447245}
+  m_LocalPosition: {x: -82.3, y: -15.541688, z: -23.447245}
   m_LocalScale: {x: 1.4412744, y: 1.2461265, z: 1.0863597}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6252,7 +6252,6 @@ MonoBehaviour:
   - {fileID: 430307878}
   - {fileID: 1089149175}
   Speed: 8.4
-  wait: 0
 --- !u!136 &1044649694
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6749,7 +6748,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laser1: {fileID: 429096626}
   laser2: {fileID: 1800425546}
-  laser3: {fileID: 295547021}
+  laserL: {fileID: 295547021}
+  Downtime: 1
+  Uptime: 3
 --- !u!4 &1101718046
 Transform:
   m_ObjectHideFlags: 0
@@ -7557,7 +7558,6 @@ MonoBehaviour:
   - {fileID: 512666800}
   - {fileID: 516879292}
   Speed: 15.2
-  wait: 0
 --- !u!114 &1317878134
 MonoBehaviour:
   m_ObjectHideFlags: 0

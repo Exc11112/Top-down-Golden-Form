@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CCTV : MonoBehaviour
+public class CCTVFL : MonoBehaviour
 {
+    [SerializeField] float Downtime;
+    [SerializeField] float Uptime;
     public GameObject[] waypoints;
     int current = 0;
     float rotSpeed;
@@ -14,7 +16,6 @@ public class CCTV : MonoBehaviour
     void Start()
     {
         wait = 1;
-        StartCoroutine(Timee());
     }
 
     // Update is called once per frame
@@ -31,17 +32,6 @@ public class CCTV : MonoBehaviour
                 }
             }
             transform.position = Vector3.MoveTowards(transform.position, waypoints[current].transform.position, Time.deltaTime * Speed);
-        }
-    }
-
-    private IEnumerator Timee()
-    {
-        while (true)
-        {
-            wait = 0;
-            yield return new WaitForSeconds(3);
-            wait= 1;
-            yield return new WaitForSeconds(3);
         }
     }
 }
