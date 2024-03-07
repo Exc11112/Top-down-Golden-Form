@@ -6,8 +6,8 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 public class TimeLaserDoor : MonoBehaviour
 {
     public GameObject laser1, laser2, laserL;
-    [SerializeField] public float Downtime;
-    [SerializeField] public float Uptime;
+    [SerializeField] public float Downtimesmall;
+    [SerializeField] public float Uptimesmall;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +27,10 @@ public class TimeLaserDoor : MonoBehaviour
         {
             laser1.SetActive(true);
             laser2.SetActive(true);
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(Uptimesmall);
             laser1.SetActive(false);
             laser2.SetActive(false);
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(Downtimesmall);
         }
     }
 
@@ -39,9 +39,9 @@ public class TimeLaserDoor : MonoBehaviour
         while (true)
         {
             laserL.SetActive(true);
-            yield return new WaitForSeconds(Uptime);
+            yield return new WaitForSeconds(3);
             laserL.SetActive(false);
-            yield return new WaitForSeconds(Downtime);
+            yield return new WaitForSeconds(3);
         }
     }
 
