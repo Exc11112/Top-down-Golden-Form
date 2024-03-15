@@ -7,11 +7,15 @@ public class play_cod : MonoBehaviour
 {
     public void playGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(1);
+    }
+    public void NextGame()
+    {
+        SceneManager.LoadScene(3);
     }
     public void Quit()
     {
-        Debug.Log("Exiting game..."); // ให้ข้อความเดบั๊กว่ากำลังออกจากเกม
-        Application.Quit(); // ออกจากเกม
+        Debug.Log("Exiting game..."); 
+        Application.Quit(); 
     }
 }
