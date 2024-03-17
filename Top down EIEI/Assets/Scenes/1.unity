@@ -12635,6 +12635,14 @@ PrefabInstance:
       propertyPath: Jewelry
       value: 
       objectReference: {fileID: 1964644813}
+    - target: {fileID: 8700701690743455521, guid: 384d1b3d0802ddc42be3ae25dac7b90e, type: 3}
+      propertyPath: walkSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700701690743455521, guid: 384d1b3d0802ddc42be3ae25dac7b90e, type: 3}
+      propertyPath: runMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
