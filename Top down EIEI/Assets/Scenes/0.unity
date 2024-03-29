@@ -9072,8 +9072,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 5269388306911698727}
-  walkSpeed: 8
-  runMultiplier: 1.5
+  walkSpeed: 10
+  runMultiplier: 2
   move: {x: 0, y: 0}
   Gold: {fileID: 112521148}
   gold: 0
