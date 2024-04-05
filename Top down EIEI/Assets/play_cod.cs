@@ -13,6 +13,10 @@ public class play_cod : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+    public void TutorialGame()
+    {
+        SceneManager.LoadScene(4);
+    }
     public void Quit()
     {
         Debug.Log("Exiting game..."); 
